@@ -1,0 +1,14 @@
+{
+  "index.qmd": {
+    "index.html": "f16635e7"
+  },
+  "about.qmd": {
+    "about.html": "d1d129fa"
+  },
+  "seminars/2026-p-adic-hodge/index.qmd": {
+    "index.html": "a4015553"
+  },
+  "seminars/2026-p-adic-hodge/lectures/01-introduction.qmd": {
+    "01-introduction.html": "5e5d9583"
+  }
+}

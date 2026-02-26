@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "JeongWoo Park"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - seminars/2026-p-adic-hodge/index.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true

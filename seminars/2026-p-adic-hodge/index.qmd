@@ -1,0 +1,51 @@
+---
+title: "[2026 Spring] p-adic Hodge Theory Seminar"
+subtitle: "p-adic Hodge theory & Fargues–Fontaine curve"
+# date: 2026-03-05  # 시작일 같은 거 적고 싶으면
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: false
+---
+
+## Overview
+
+-   **Time/Venue:** To be announced (2-3 hours)
+-   **Topics**
+    -   Introductory p-adic Hodge theory
+    -   Integral p-adic Hodge theory
+    -   The Fargues-Fontaine curve
+-   **References**
+    -   Serin Hong, *Lecture notes on p-adic Hodge theory.*
+    -   Brinon & Conrad - *CMI Summer School Notes on p-adic Hodge Theory.*
+
+```{=html}
+<!--
+## Announcements
+::: {.callout-important}
+- 
+:::
+-->
+```
+
+## Schedule (Temporary)
+
+| Week | Date | Topic | Reading |
+|-----------------:|:----------------:|:-----------------|:-----------------|
+| 1 | 2026-03-xx | *No meeting* | \- |
+| 2 | 2026-03-xx | [Introduction](lectures/01-introduction.qmd) | \[Hong, 1. Introduction\] |
+| 3 |  | p-divisible groups |  |
+| 4 |  | Hodge-Tate representations |  |
+| 5 |  | Period rings and functors |  |
+| 6 |  | Period rings and functors |  |
+| 7 |  | Period rings and functors |  |
+| 8 |  | *No meeting (midterm exam)* |  |
+| 9 |  | Integral p-adic Hodge theory |  |
+| 10 |  | Integral p-adic Hodge theory |  |
+| 11 |  | Integral p-adic Hodge theory |  |
+| 12 |  | Fargues-Fontain curves |  |
+| 13 |  | Fargues-Fontain curves |  |
+| 14 |  | Fargues-Fontain curves |  |
+| 15 |  |  |  |
+| 16 |  | *No meeting (final exam)* |  |

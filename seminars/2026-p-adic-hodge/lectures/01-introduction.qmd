@@ -1,0 +1,10 @@
+---
+title: "Lecture 1. Introduction"
+date: 2026-03-??
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    number-sections: false
+---
+
