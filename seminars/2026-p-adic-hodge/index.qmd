@@ -11,7 +11,7 @@ format:
 
 ## Overview
 
--   **Time/Venue:** To be announced (2-3 hours)
+-   **Time/Venue:** Monday 1-4 PM
 -   **Topics**
     -   Introductory p-adic Hodge theory
     -   Integral p-adic Hodge theory
@@ -33,19 +33,19 @@ format:
 
 | Week | Date | Topic | Reading |
 |-----------------:|:----------------:|:-----------------|:-----------------|
-| 1 | 2026-03-xx | *No meeting* | \- |
-| 2 | 2026-03-xx | [Introduction](lectures/01-introduction.qmd) | \[Hong, 1. Introduction\] |
-| 3 |  | p-divisible groups |  |
-| 4 |  | Hodge-Tate representations |  |
-| 5 |  | Period rings and functors |  |
-| 6 |  | Period rings and functors |  |
-| 7 |  | Period rings and functors |  |
-| 8 |  | *No meeting (midterm exam)* |  |
-| 9 |  | Integral p-adic Hodge theory |  |
-| 10 |  | Integral p-adic Hodge theory |  |
-| 11 |  | Integral p-adic Hodge theory |  |
-| 12 |  | Fargues-Fontain curves |  |
-| 13 |  | Fargues-Fontain curves |  |
-| 14 |  | Fargues-Fontain curves |  |
-| 15 |  |  |  |
-| 16 |  | *No meeting (final exam)* |  |
+| 1 | 2026-03-02 | *No meeting* | \- |
+| 2 | 2026-03-09 | [Introduction](lectures/01-introduction.qmd) | \[Hong, Chapter 1\], \[Brinon-Conrad, Part I\] |
+| 3 | 2026-03-16 | p-divisible groups |  |
+| 4 | 2026-03-23 | Hodge-Tate representations |  |
+| 5 | 2026-03-30 | Period rings and functors 1 |  |
+| 6 | 2026-04-06 | Period rings and functors 2 |  |
+| 7 | 2026-04-13 | Period rings and functors 3 |  |
+| 8 | 2026-04-20 | *No meeting (midterm exam)* |  |
+| 9 | 2026-04-27 | Integral p-adic Hodge theory 1 |  |
+| 10 | 2026-05-04 | Integral p-adic Hodge theory 2 |  |
+| 11 | 2026-05-11 | Integral p-adic Hodge theory 3 |  |
+| 12 | 2026-05-18 | Fargues-Fontain curves 1 |  |
+| 13 | 2026-05-25 | *No meeting (Substitute Holiday for Buddha’s Birthday)* |  |
+| 14 | 2026-06-01 | Fargues-Fontain curves 2 |  |
+| 15 | 2026-06-08 | Fargues-Fontain curves 3 |  |
+| 16 | 2026-06-15 | *No meeting (final exam)* |  |
