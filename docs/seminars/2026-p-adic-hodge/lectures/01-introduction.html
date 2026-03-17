@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-01">
+<meta name="dcterms.date" content="2026-03-09">
 
 <title>Lecture 1. Introduction – JeongWoo Park</title>
 <style>
@@ -69,7 +69,51 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<meta name="robots" content="noindex, nofollow">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -110,8 +154,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#notations" id="toc-notations" class="nav-link active" data-scroll-target="#notations">Notations</a></li>
+  <li><a href="#arithmetic-perspective" id="toc-arithmetic-perspective" class="nav-link" data-scroll-target="#arithmetic-perspective">1. Arithmetic perspective</a></li>
+  <li><a href="#geometric-perspective" id="toc-geometric-perspective" class="nav-link" data-scroll-target="#geometric-perspective">2. Geometric perspective</a></li>
+  <li><a href="#period-rings-and-functors" id="toc-period-rings-and-functors" class="nav-link" data-scroll-target="#period-rings-and-functors">3. Period rings and functors</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-introduction.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -129,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 1, 2026</p>
+      <p class="date">March 9, 2026</p>
     </div>
   </div>
   
@@ -141,10 +194,157 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="hidden">
+
+</div>
+<section id="notations" class="level2">
+<h2 class="anchored" data-anchor-id="notations">Notations</h2>
+<ul>
+<li><span class="math inline">\overline{k}</span>: separable closure of a field <span class="math inline">k</span>.</li>
+<li><span class="math inline">\operatorname{Gal}_{k}</span>: absolute Galois group of a field <span class="math inline">k</span>.</li>
+</ul>
+</section>
+<section id="arithmetic-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="arithmetic-perspective">1. Arithmetic perspective</h2>
+<p>In number theory, one of the main character is .</p>
+<p><strong>Definition<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</strong> Let <span class="math inline">\Gamma</span> be a profinite group. An is a continuous group homomorphism <span class="math display"> \rho: \Gamma \to \operatorname{GL}_{n}(\mathbf{Q}_{\ell}). </span></p>
+<p><strong>Examples.</strong></p>
+<ol type="1">
+<li><p>For an abelian variety <span class="math inline">A</span> over a field <span class="math inline">k</span>, the rational Tate module <span class="math inline">V_{\ell}(A) \coloneqq \mathbf{Q}_{\ell} \otimes_{\mathbf{Z}_{\ell}} T_{\ell}(A)</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\operatorname{Gal}_{k}</span>. Here, the (integral) Tate module <span class="math inline">T_{\ell}(A)</span> is a <span class="math inline">\mathbf{Z}_{\ell}[\operatorname{Gal}_{k}]</span>-module <span class="math display"> T_{\ell}(A) \coloneqq \varprojlim_{n} A[\ell^{n}](\overline{k}). </span></p></li>
+<li><p>For a proper scheme <span class="math inline">X</span> over a field <span class="math inline">k</span>, the étale cohomology <span class="math inline">H_{\mathrm{ét}}^{n}(X_{\overline{k}}, \mathbf{Q}_{\ell})</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\operatorname{Gal}_{k}</span>.</p></li>
+</ol>
+<p><strong>Remark.</strong> In fact, for an abelian variety <span class="math inline">A</span> over a field <span class="math inline">k</span>, we obtain <span class="math display"> T_{\ell}(A) = H_{\mathrm{ét}}^1(A_{\overline{k}}, \mathbf{Z}_{\ell})^{\vee} </span> as <span class="math inline">\mathbf{Z}_{\ell}[\operatorname{Gal}_{k}]</span>-modules.</p>
+<p>From now on, we focus on local Galois representations. Note that for a global Galois representation <span class="math inline">\rho: \operatorname{Gal}_{\mathbf{Q}} \to \operatorname{GL}(V)</span>, we can induce a local Galois representation <span class="math inline">\rho_{p}: \operatorname{Gal}_{\mathbf{Q}_{p}} \to \operatorname{GL}(V)</span> by composing the restriction map <span class="math inline">\operatorname{Gal}_{\mathbf{Q}_{p}} \to \operatorname{Gal}_{\mathbf{Q}}</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>In number theory, local objects are simpler than global objects. In the local situation taking modulo reduction makes further simplification. Let us see how this happens for Tate modules of elliptic curve.</p>
+<p>Let <span class="math inline">E</span> be an elliptic curve over a local field <span class="math inline">K</span>, say <span class="math inline">\mathbf{Q}_{p}</span>. Assume that <span class="math inline">E</span> has a good reduction, i.e., there is an elliptic curve <span class="math inline">E_{\mathbf{Z}_{p}}</span> over <span class="math inline">\operatorname{Spec}(\mathbf{Z}_{p})</span> whose generic fiber is isomorphic to <span class="math inline">E</span>. Let <span class="math inline">E_{\mathbf{F}_{p}}</span> be its special fiber. We want to compare two Tate modules <span class="math inline">T_{\ell}(E)</span> and <span class="math inline">T_{\ell}(E_{\mathbf{F}_{p}}</span>. To do so, we need a specialization map.</p>
+<p><span class="math display"> \operatorname{sp}: T_{\ell}(E) \to T_{\ell}(E_{\mathbf{F}_{p}}). </span> In fact, we construct a map <span class="math display"> \operatorname{sp}: G(\overline{\mathbf{Q}_{p}}) \to G_{\mathbf{F}_{p}}(\overline{\mathbf{F}_{p}}) </span> for each <span class="math inline">G = E_{\mathbf{Z}_{p}}[\ell^{n}]</span>. Since <span class="math inline">G_{\mathbf{Z}_{p}}</span> is proper, by the valuative criterion of properness, we obtain <span class="math display"> G(\overline{\mathbf{Q}_{p}}) = G_{\mathbf{Z}_{p}}(\overline{\mathbf{Z}_{p}}). </span> We compose this with the reduction map <span class="math display"> G_{\mathbf{Z}_{p}}(\overline{\mathbf{Z}_{p}}) \to G_{\mathbf{F}_{p}}(\overline{\mathbf{F}_{p}}) </span> to obtain the specialization map. One can show that it is a homomorphism and Galois equivariant with respect to the reduction map <span class="math inline">\operatorname{Gal}_{\mathbf{Q}_{p}} \to \operatorname{Gal}_{\mathbf{F}_{p}}</span>.</p>
+<p>If <span class="math inline">\ell \perp p</span>, then <span class="math inline">G = E_{\mathbf{Z}_{p}}[\ell^{n}]</span> is finite étale by the following fact.</p>
+<p><strong>Fact.</strong> The kernel <span class="math inline">E_{\mathbf{Z}_{p}}[\ell^{n}]</span> is a finite étale group scheme over <span class="math inline">\operatorname{Spec}(\mathbf{Z}_{p})</span> for all <span class="math inline">n</span>.</p>
+<p>In this case, the reduction map becomes a bijection by the following theorem.</p>
+<p><strong>Theorem ([Stacks Project, <a href="https://stacks.math.columbia.edu/tag/09ZS">Tag 09ZS</a>]).</strong> For a Henselian local ring <span class="math inline">R</span> with residue field <span class="math inline">k</span>, the reduction defines equivalence of categories <span class="math display"> \mathrm{Fét}(R) \to \mathrm{Fét}(k); \quad T \mapsto T_{k} </span></p>
+<p>Indeed, we obtain <span class="math display"> G_{\mathbf{Z}_{p}}(\overline{\mathbf{Z}_{p}}) = \varinjlim_{K'/K} \operatorname{Hom}_{\mathbf{Z}_{p}}(\operatorname{Spec}(\sO_{K'}), G_{\mathbf{Z}_{p}}) = \varinjlim_{K'/K} \operatorname{Hom}_{\mathbf{F}_{p}}(\operatorname{Spec}(k_{K'}), G_{\mathbf{F}_{p}}) = G_{\mathbf{F}_{p}}(\overline{\mathbf{F}_{p}}). </span></p>
+<p>Therefore, we obtain a Galois equivariant isomorphism of <span class="math inline">\mathbf{Z}_{\ell}</span>-modules <span class="math display"> \operatorname{sp}: T_{\ell}(E) \to T_{\ell}(E_{\mathbf{F}_{p}}). </span> In particular, the Tate module <span class="math inline">T_{\ell}(E)</span> is unramified if it has a good reduction and <span class="math inline">\ell \perp p</span>. In fact, the unramifiedness of Tate module is equivalent to the elliptic curve <span class="math inline">E</span> has a good reduction!</p>
+<p><strong>Theorem (Néron-Ogg-Shafarevich).</strong> Let <span class="math inline">A</span> be an abelian variety over a local field <span class="math inline">K</span> with residual characteristic <span class="math inline">p</span>. The following are equivalent.</p>
+<ol type="1">
+<li><span class="math inline">E</span> has a good reduction.</li>
+<li>For any <span class="math inline">\ell \perp p</span>, the <span class="math inline">\ell</span>-adic rational Tate module <span class="math inline">V_{\ell}(E)</span> is unramified.</li>
+<li>For some <span class="math inline">\ell \perp p</span>, the <span class="math inline">\ell</span>-adic rational Tate module <span class="math inline">V_{\ell}(E)</span> is unramified.</li>
+</ol>
+<p>The natural question is asking what can we say if <span class="math inline">\ell = p</span>. For this case, the Tate module <span class="math inline">T_{\ell}(E)</span> and <span class="math inline">T_{\ell}(E_{\mathbf{F}_{p}})</span> are <em>never</em> isomorphic! Indeed, while the rank of <span class="math inline">T_{\ell}(E)</span> is <span class="math inline">2</span>, the rank of <span class="math inline">T_{\ell}(E_{\mathbf{F}_{p}})</span> is at most <span class="math inline">1</span> as <span class="math display"> E_{\mathbf{F}_{p}}(p^{n}) \cong 0, \mathbf{Z}/p^{n} \mathbf{Z}. </span></p>
+<p>Still, there is an answer to this question.</p>
+<p><strong>Theorem (Grothendieck).</strong> An abelian variety <span class="math inline">A</span> over a local field <span class="math inline">K</span> has a good reduction if and only if <span class="math inline">V_{p}(A)</span> is <em>crystalline</em>.</p>
+<p>We will roughly explain about crystalline representations in the following sections.</p>
+<p><strong>Spoiler.</strong></p>
+<ul>
+<li>As its name suggests, we will use crystalline cohomology in place of étale cohomology.</li>
+<li>The p-adic counterpart of Tate module is <em>p-divisible group</em>. As there is a contravariant relationship between Tate modules and étale cohomology, there is a similar correspondence between p-divisible groups and crystalline cohomology.</li>
+</ul>
+</section>
+<section id="geometric-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="geometric-perspective">2. Geometric perspective</h2>
+<p>In the previous section, we explained the arithmetic part of p-adic Hodge theory. Still, the question that why it is named with “p-adic Hodge” remains. This section would give an answer.</p>
+<section id="hodge-tate-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="hodge-tate-comparison">2.1. Hodge-Tate comparison</h3>
+<p>The classical Hodge decomposition is as follows.</p>
+<p><strong>Theorem (Hodge decomposition).</strong> Let <span class="math inline">X</span> be a smooth proper scheme over <span class="math inline">\mathbf{C}</span>. There is a functorial<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> isomorphism of <span class="math inline">\mathbf{C}</span>-vector spaces <span class="math display"> H_{\text{Betti}}^{n}(X, \mathbf{Z}) \otimes_{\mathbf{Z}} \mathbf{C}\cong \bigoplus_{i+j = n} H^{i, j}(X). </span> Here, <span class="math inline">H^{i, j}(X) = H^{i}(X, \Omega^{j}_{X/\mathbf{C}})</span> and there is the Hodge symmetry <span class="math inline">\overline{H^{i,j}} = H^{j, i}</span>. In the other words, <span class="math inline">H_{\text{Betti}}^n(X, \mathbf{Z})</span> admits a natural <span class="math inline">\mathbf{Z}</span>-Hodge structure of weight <span class="math inline">n</span>.</p>
+<p>Tate suggested and Faltings proved a <span class="math inline">p</span>-adic version of this Hodge decomposition. Of course, the replacement of Betti cohomology is étale cohomology. To state this in the full generality, we introduce the notion, <em>p-adic fields</em>.</p>
+<p><strong>Definition.</strong> A <em><span class="math inline">p</span>-adic field</em> is a characteristic <span class="math inline">0</span> complete discretely valued field with perfect residue field of characteristic <span class="math inline">p</span>.</p>
+<p><strong>Remark.</strong> Any <span class="math inline">p</span>-adic field contains <span class="math inline">\mathbf{Q}_{p}</span>, the topological closure of <span class="math inline">\mathbf{Q}</span>.</p>
+<p><strong>Examples.</strong></p>
+<ol type="1">
+<li>Finite extensions of <span class="math inline">\mathbf{Q}_{p}</span> are <span class="math inline">p</span>-adic fields.</li>
+<li>The completed maximal unramified field <span class="math inline">\breve{K} \coloneqq \widehat{K^{\mathrm{unr}}}</span> of a finite extension <span class="math inline">K/\mathbf{Q}_{p}</span> is a <span class="math inline">p</span>-adic field.</li>
+<li>For any <span class="math inline">p</span>-adic field <span class="math inline">K</span> with residue field <span class="math inline">k</span>, it contains the “maximal unramified subextension” <span class="math inline">K_{0} \coloneqq W(k)[\frac{1}{p}]</span>. This field <span class="math inline">K_{0}</span> is a <span class="math inline">p</span>-adic field.</li>
+<li>The completed algebraic closure <span class="math inline">\mathbf{C}_{K} \coloneqq \widehat{\overline{K}}</span> of a <span class="math inline">p</span>-adic field <span class="math inline">K/\mathbf{Q}_{p}</span> is <em>not</em> a <span class="math inline">p</span>-adic field. Its valuation gruop is <span class="math inline">\mathbf{Q}</span>.</li>
+</ol>
+<p><strong>Fact.</strong> The completed algebraic closure <span class="math inline">\mathbf{C}_{K}</span> of <span class="math inline">K</span> is algebraically closed.</p>
+<p><strong>Theorem (Faltings, Hodge-Tate decomposition).</strong> Let <span class="math inline">X</span> be a smooth proper scheme over a <span class="math inline">p</span>-adic field <span class="math inline">K</span>. There is a functorial isomorphism <span class="math display"> H_{\mathrm{ét}}^n(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} \mathbf{C}_{K} \cong \bigoplus_{i+j = n} H^{i}(X, \Omega^{j}_{X/K}) \otimes_{K} \mathbf{C}_{K}(-j). </span></p>
+<p>Here, <span class="math inline">\mathbf{C}_{K}(-j)</span> is the <span class="math inline">(-j)</span>th <em>Tate twist</em> of <span class="math inline">\mathbf{C}_{K}</span>. Let us define it.</p>
+<p><strong>Definition.</strong> The Tate module <span class="math inline">\mathbf{Z}_{p}(1)</span> is defined as follows: <span class="math display"> \mathbf{Z}_{p}(1) \coloneqq T_{p}(\mathbf{G}_{m}) \coloneqq \varprojlim_{n} \mathbf{G}_{m}[p^{n}](\overline{K}) = \varprojlim_{n} \mu_{p^{n}}(\overline{K}). </span> The corresponding character <span class="math inline">\chi: \operatorname{Gal}_{K} \to \mathbf{Z}_{p}^\times</span> is called the <em><span class="math inline">p</span>-adic cyclotomic character</em>.</p>
+<p><strong>Definition.</strong> For a <span class="math inline">p</span>-adic <span class="math inline">\operatorname{Gal}_{K}</span>-module <span class="math inline">M</span>, its <span class="math inline">n</span>th Tate twist <span class="math inline">M(n)</span> is <span class="math display">  
+  M(n) \coloneqq
+  \begin{cases}
+    M \otimes_{\mathbf{Z}_{p}} \mathbf{Z}_{p}(1)^{\otimes n} &amp; n \ge 0 \\
+    \operatorname{Hom}(\mathbf{Z}_{p}(n), M) &amp; n &lt; 0.
+  \end{cases}
+</span></p>
+<p>Also note that <span class="math inline">\mathbf{C}_{K}</span> has a natural <span class="math inline">\operatorname{Gal}_{K}</span>-action; an element <span class="math inline">\sigma \in \operatorname{Gal}_{K}</span> acts on <span class="math inline">\mathbf{C}_{K}</span> by completing the continuous map <span class="math inline">\sigma: \overline{K} \to \overline{K}</span>.</p>
+<p>The Hodge-Tate decomposition can be written in a fancy way using <em>Hodge-Tate period ring</em>.</p>
+<p><strong>Definition.</strong> The <em>Hodge-Tate period ring</em> <span class="math inline">B_{\mathrm{HT}}</span> is a (<span class="math inline">\mathbf{Z}</span>-)graded <span class="math inline">K</span>-algebra <span class="math display"> B_{\mathrm{HT}} \coloneqq \bigoplus_{j \in \mathbf{Z}} \mathbf{C}_{K}(j). </span></p>
+<p><strong>Theorem (Hodge-Tate decomposition, period ring version).</strong> For any smooth proper <span class="math inline">X</span> over a <span class="math inline">p</span>-adic field <span class="math inline">K</span>, there is a grading respecting functorial isomorphism <span class="math display"> H_{\mathrm{ét}}^n(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{HT}} \cong \left( \bigoplus_{i+j = n} H^{i}(X, \Omega^{j}_{X/K}) \right) \otimes_{K} B_{\mathrm{HT}}. </span></p>
+<p><strong>Remark.</strong> - The grading on the left-hand side is comes from the grading of <span class="math inline">B_{\mathrm{HT}}</span>. The grading on the right-hand side is the convolution grading.[^convolution grading] - Taking <span class="math inline">\operatorname{gr}^{0}</span> to the period ring Hodge-Tate decomposition gives the previous Hodge-Tate decomposition.</p>
+<p>There is a very important theorem describing the Galois invariant part of <span class="math inline">B_{\mathrm{HT}}</span>.</p>
+<p><strong>Theorem (Tate-Sen).</strong> For an integer <span class="math inline">j</span>, <span class="math display">
+  \mathbf{C}_{K}(j)^{\operatorname{Gal}_{K}} =  
+  \begin{cases}
+    K &amp; j = 0 \\
+    0 &amp; j \neq 0.
+  \end{cases}
+</span></p>
+<p>This implies <span class="math inline">B_{\mathrm{HT}}^{\operatorname{Gal}_{K}} = \mathbf{C}_{K}</span>. Hence, if we take the Galois invariant to the Hodge-Tate decomposition, we obtain a grading respecting isomorphism <span class="math display"> (H_{\mathrm{ét}}^n(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{HT}})^{\operatorname{Gal}_{K}} \cong \bigoplus_{i+j = n} H^{i}(X, \Omega^{j}_{X/K}). </span> That means, <em>étale cohomology remembers Hodge cohomology</em>.</p>
+</section>
+<section id="de-rham-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="de-rham-comparison">2.2. de Rham comparison</h3>
+<p>The Hodge-Tate decomposition is not so strong so we cannot obtain many useful properties from this. We need a stronger comparison theorem, and the next step is the <em>de Rham comparison</em>. Let us fist recall the classical theory.</p>
+<p>For a smooth proper scheme <span class="math inline">X</span> over <span class="math inline">\mathbf{C}</span>, the de Rham cohomology <span class="math inline">H_{\mathrm{dR}}^n(X/\mathbf{C})</span> admits a natural decreasing filtration, called a <em>Hodge filtration</em>: <span class="math display"> H_{\mathrm{dR}}^n(X/\mathbf{C}) = \mathrm{Fil}^{0}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \supseteq \mathrm{Fil}^{1}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \supseteq \cdots \supseteq \mathrm{Fil}^{n+1}(H_{\mathrm{dR}}^n(X/\mathbf{C})) = 0. </span> The de Rham comparison theorem is <span class="math display"> H_{\text{Betti}}^n(X, \mathbf{Z}) \otimes_{\mathbf{Z}} \mathbf{C}\cong H_{\mathrm{dR}}^n(X/\mathbf{C}). </span> This recovers the Hodge decomposition via <span class="math display"> H^{i, j} = \mathrm{Fil}^{j}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \cap \overline{\mathrm{Fil}^{i}(H_{\mathrm{dR}}^n(X/\mathbf{C}))}. </span> Although this is equivalent to the Hodge decomposition, in the <span class="math inline">p</span>-adic case, it gives a stronger comparison.</p>
+<p><strong>Theorem (Faltings, de Rham comparison).</strong> There is a filtered <span class="math inline">K</span>-algebra <span class="math inline">B_{\mathrm{dR}}</span> such that, for a smooth proper scheme <span class="math inline">X</span> over a <span class="math inline">p</span>-adic field <span class="math inline">K</span>, there is a natural filtration respecting isomorphism <span class="math display"> H_{\mathrm{ét}}^n(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{dR}} \cong H_{\mathrm{dR}}^n(X/K) \otimes_{K} B_{\mathrm{dR}}. </span></p>
+<p><strong>Remark.</strong> The filtration on the left-hand side comes from the grading of <span class="math inline">B_{\mathrm{dR}}</span> (as there is no filtration on étale cohomology). On the right-hand side, we give the convolution filtration.[^convolution filtration]</p>
+<p>We are not going to define <span class="math inline">B_{\mathrm{dR}}</span>, but let us list the main properties of <span class="math inline">B_{\mathrm{dR}}</span>.</p>
+<p><strong>Proposition.</strong> The de Rham period ring <span class="math inline">B_{\mathrm{dR}}</span> is a filtered <span class="math inline">K</span>-algebra with a continuous <span class="math inline">\operatorname{Gal}_{K}</span>-action such that</p>
+<ul>
+<li><span class="math inline">\operatorname{gr}(\mathrm{Fil}^{\bullet}(B_{\mathrm{dR}})) = B_{\mathrm{HT}}</span>,</li>
+<li><span class="math inline">B_{\mathrm{dR}}^{\operatorname{Gal}_{K}} = K</span>.</li>
+</ul>
+<p>By the first property, we can recover the Hodge-Tate comparison from de Rham comparison by taking the associated graded vector space. By the second property, we can recover the de Rham cohomology from étale cohomology.</p>
+</section>
+<section id="crystalline-comparison-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="crystalline-comparison-theorem">2.3. Crystalline comparison theorem</h3>
+<p>The last comparison theorem is the <em>crystalline comparison</em>.</p>
+<p><strong>Theorem (Faltings, crystalline comparison).</strong> Let <span class="math inline">K</span> be a <span class="math inline">p</span>-adic field with (perfect) residue field <span class="math inline">k</span> and <span class="math inline">K_{0} \coloneqq W(k)[\frac{1}{p}]</span> be the maximal unramified subextension. There is a <span class="math inline">\operatorname{Gal}_{K}</span>-stable <span class="math inline">K_{0}</span>-subalgebra <span class="math inline">B_{\mathrm{cris}}</span> of <span class="math inline">B_{\mathrm{dR}}</span> such that, for a proper smooth <span class="math inline">X</span> over <span class="math inline">K</span> with a good reduction <span class="math inline">X_{W(k)}</span>, we obtain a natural Galois and <span class="math inline">\varphi</span> equivariant filtration respecting isomorphism <span class="math display"> H_{\mathrm{ét}}^{n}(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{cris}} \cong H_{\mathrm{cris}}^{n}(X_{k}/W(k))[\tfrac{1}{p}] \otimes_{K_{0}} B_{\mathrm{cris}} </span> recovering the de Rham comparison after tensoring <span class="math inline">B_{\mathrm{dR}}</span>.</p>
+<p>Again, we are not going to define the period ring <span class="math inline">B_{\mathrm{cris}}</span>. Instead, we list some properties of it.</p>
+<p><strong>Proposition.</strong> <span class="math inline">B_{\mathrm{cris}}</span> is a <span class="math inline">\operatorname{Gal}_{K}</span>-stable <span class="math inline">K_{0}</span>-subalgbra of <span class="math inline">B_{\mathrm{dR}}</span> with the induced filtration. Additionally, it is equipped with a <span class="math inline">\varphi</span>-action whose restruction to <span class="math inline">K_{0}</span> is the Witt vector Frobenius of <span class="math inline">K_{0}</span>. Also, <span class="math inline">B_{\mathrm{cris}}^{\operatorname{Gal}_{K}} = K_{0}</span>.</p>
+<p>By the last property, we obtain this.</p>
+<p><strong>Corollary.</strong> <span class="math inline">(H_{\mathrm{ét}}^{n}(X_{\overline{K}}, \mathbf{Q}_{p})^{\operatorname{Gal}_{K}} \cong H_{\mathrm{cris}}^{n}(X_{k} / W(k))[\tfrac{1}{p}]</span>.</p>
+<p><strong>Remark.</strong> This can be thought of as “crystalline cohomology is the right <span class="math inline">p</span>-adic replacement of étale cohomology”. Compare this with the proper-smooth base change theorem for étale cohomology.</p>
+<p><strong>Theorem (proper-smooth base change, [Milne, Theorem 20.4]).</strong> Let <span class="math inline">R</span> be a Henselian local domain with fraction field <span class="math inline">K</span> and residue field <span class="math inline">k</span>. For any <span class="math inline">X</span> proper smooth scheme over <span class="math inline">R</span>, there is a natural map called a (co)specialization <span class="math display"> \operatorname{sp}: H_{\mathrm{ét}}^{n}(X_{k}, \mathbf{Q}_{\ell}) \to H_{\mathrm{ét}}^{n}(X_{K}, \mathbf{Q}_{\ell}) </span> which is a Galois equivariant isomorphism.</p>
+<p><strong>Exercise.</strong> Prove the (co)specialization map is Galois equivariant with respect to the reduction map <span class="math inline">\operatorname{Gal}_{K} \to \operatorname{Gal}_{k}</span>. In particular, <span class="math inline">H_{\mathrm{ét}}^{n}(X_{\overline{K}}, \mathbf{Q}_{\ell})</span> is unramified if <span class="math inline">X</span> has a good reduction.</p>
+</section>
+</section>
+<section id="period-rings-and-functors" class="level2">
+<h2 class="anchored" data-anchor-id="period-rings-and-functors">3. Period rings and functors</h2>
+<p>In this section, we will make a formal setup to express what we explained in a categorical language. Throught this section, we fix a p-adic field <span class="math inline">K</span> and let <span class="math inline">B \in \{B_{\mathrm{HT}}, B_{\mathrm{dR}}, B_{\mathrm{cris}}\}</span>.</p>
+<p><strong>Definition.</strong> We define a functor <span class="math inline">D_{B}: \mathrm{Rep}_{\mathbf{Q}_{p}}(\operatorname{Gal}_{K}) \to \mathrm{Vect}^{\ast}_{B}</span> as <span class="math display"> D_{B}(V) \coloneqq (V \otimes_{\mathbf{Q}_{p}} B)^{\Gamma}. </span> Here, <span class="math inline">\mathrm{Vect}^{\ast}_{B}</span> is the category of <span class="math inline">B^{\operatorname{Gal}_{K}}</span>-vector spaces with additional structure, where the additional structure is given as follows.</p>
+<ul>
+<li>If <span class="math inline">B = B_{\mathrm{HT}}</span>, the additional structure is the grading.</li>
+<li>If <span class="math inline">B = B_{\mathrm{dR}}</span>, the additional structure is the filtration.</li>
+<li>If <span class="math inline">B = B_{\mathrm{cris}}</span>, the additional structure is the filtration with <span class="math inline">\varphi</span>-action.</li>
+</ul>
+<p><strong>Definition.</strong> We say a representation <span class="math inline">V \in \mathrm{Rep}_{\mathbf{Q}_{p}}(\operatorname{Gal}_{K})</span> is <em><span class="math inline">B</span>-admissible</em> if the natural map <span class="math display"> \alpha_{V}: D_{B}(V) \otimes_{B^{\operatorname{Gal}_{K}}} B \to V \otimes_{\mathbf{Q}_{p}} (B \otimes_{B^{\operatorname{Gal}_{K}}} B) \to V \otimes_{\mathbf{Q}_{p}} B </span> is an isomorphism. We denote by <span class="math inline">\mathrm{Rep}_{\mathbf{Q}_{p}}^{B}(\operatorname{Gal}_{K})</span> the full subcategory of <span class="math inline">\mathrm{Rep}_{\mathbf{Q}_{p}}(\operatorname{Gal}_{K}</span> consisting of <span class="math inline">B</span>-admissible representations.</p>
+<p><strong>Example.</strong> Let <span class="math inline">B = B_{HT}</span>. Then, the map <span class="math display"> \alpha_{V}: D_{\mathrm{HT}}(V) \otimes_{K} B_{\mathrm{HT}} \to V \otimes_{\mathbf{Q}_{p}} B_{\mathrm{HT}} </span> is an isomorphism if and only if the <span class="math inline">\operatorname{gr}^{0}</span>-part <span class="math display"> \operatorname{gr}^{0}(\alpha_{V}): \bigoplus_{j \in \mathbf{Z}} (V \otimes_{\mathbf{Q}_{p}} \mathbf{C}_{K}(j))^{\operatorname{Gal}_{K}} \otimes \mathbf{C}_{K}(-j) \to V \otimes_{\mathbf{Q}_{p}} \mathbf{C}_{K} </span> is an isomorphism as the <span class="math inline">\operatorname{gr}^{j}</span>-part is the <span class="math inline">j</span>th Tate twist of <span class="math inline">\operatorname{gr}^{0}</span>-part.</p>
+<p><strong>Fact (Serre-Tate).</strong> The map <span class="math inline">\operatorname{gr}^{0}(\alpha_{V})</span> is injective.</p>
+<p><strong>Corollary.</strong> <span class="math inline">\dim_{K_{0}}(D_{\mathrm{cris}}(V)) \le \dim_{K}(D_{\mathrm{dR}}(V)) \le \dim_{K}(D_{\mathrm{HT}}(V)) \le \dim_{\mathbf{Q}_{p}}(V)</span>.</p>
+<p><strong>Proof.</strong> The last inequality follows from Serre-Tate. To prove the first inequality, we need one fact.</p>
+<p><strong>Fact.</strong> The natural map <span class="math inline">B_{\mathrm{cris}} \otimes_{K_{0}} K \to B_{\mathrm{dR}}</span> is injective.</p>
+<p>Thus, the natural map <span class="math display"> V \otimes_{\mathbf{Q}_{p}} (B_{\mathrm{cris}} \otimes_{K_{0}} K) \to V \otimes_{\mathbf{Q}_{p}} B_{\mathrm{dR}} </span> is injective, and the <span class="math inline">\operatorname{Gal}_{K}</span>-invariant <span class="math display"> (V \otimes_{\mathbf{Q}_{p}} (B_{\mathrm{cris}} \otimes_{K_{0}} K))^{\operatorname{Gal}_{K}} \to (V \otimes_{\mathbf{Q}_{p}} B_{\mathrm{dR}})^{\operatorname{Gal}_{K}} </span> is injective as well. The source is <span class="math inline">D_{\mathrm{cris}}(V) \otimes_{K_{0}} K</span> and the target is <span class="math inline">D_{\mathrm{dR}}(V)</span>. Hence, we obtain <span class="math inline">\dim_{K_{0}}(D_{\mathrm{cris}}(V)) \le \dim_{K}(D_{\mathrm{dR}}(V))</span>.</p>
+<p>The middle inequality follows as <span class="math display"> \dim_{K}(D_{\mathrm{dR}}(V)) = \dim_{K}(\operatorname{gr}^{\bullet}(D_{\mathrm{dR}}(V))) \le \dim_{K}((\operatorname{gr}^{\bullet}(V \otimes_{\mathbf{Q}_{p}} B_{\mathrm{dR}}))^{\operatorname{Gal}_{K}}) = \dim_{K}(D_{\mathrm{HT}}(V)) </span> by the left-exactness of <span class="math inline">\operatorname{Gal}_{K}</span>-invariant.</p>
+<p><strong>Remark.</strong> In fact, <span class="math inline">\alpha_{V}</span> and <span class="math inline">\operatorname{gr}^{0}(\alpha_{V})</span> being an isomorphism only depends on <span class="math inline">V \otimes_{\mathbf{Q}_{p}} \mathbf{C}_{K}</span>. Furthermore, <span class="math display"> D_{\mathrm{HT}}: \mathrm{Rep}_{\mathbf{C}_{K}}(\operatorname{Gal}_{K}) \to \mathrm{Vect}^{\operatorname{Gr}}_{K} </span> is an equivalence of categories with a quasi-inverse <span class="math inline">D \mapsto \operatorname{gr}^{0}(D \otimes_{K} B_{\mathrm{HT}})</span> ([Brinon-Conrad, Theorem 2.4.11]).</p>
+<p>In fact, there is a more general result.</p>
+<p><strong>Theorem.</strong> The natural map <span class="math inline">\alpha_{V}</span> is injective. In particular, the map <span class="math inline">\alpha_{V}</span> is an isomorphism if and only if <span class="math inline">\dim_{B^{\operatorname{Gal}_{K}}}(V) = \dim_{\mathbf{Q}_{p}}(V)</span>.</p>
+<p><strong>Corollary.</strong> <span class="math inline">\mathrm{Rep}_{\mathbf{Q}_{p}}^{B_{\mathrm{cris}}}(\operatorname{Gal}_{K}) \subset \mathrm{Rep}_{\mathbf{Q}_{p}}^{B_{\mathrm{dR}}}(\operatorname{Gal}_{K}) \subset \mathrm{Rep}_{\mathbf{Q}_{p}}^{B_{\mathrm{HT}}}(\operatorname{Gal}_{K})</span></p>
+<p><strong>Proof.</strong> If <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{cris}}</span>-admissible, then <span class="math display"> \dim_{\mathbf{Q}_{p}}(V) = \dim_{K}(D_{\mathrm{cris}}(V)) \le \dim_{K}(D_{\mathrm{dR}}(V)) \le \dim_{\mathbf{Q}_{p}}(V). </span> Hence, <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{dR}}</span>-admissible. Similarly, <span class="math inline">B_{\mathrm{dR}}</span>-admissibility implies <span class="math inline">B_{\mathrm{HT}}</span>-admissibility.</p>
 
 
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>There are various different definitions of <span class="math inline">\ell</span>-adic representation, e.g., using <span class="math inline">\overline{\mathbf{Q}_{\ell}}</span> in place of <span class="math inline">\mathbf{Q}_{\ell}</span> (and assuming some properties).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Note that we need to fix an embedding <span class="math inline">\overline{\mathbf{Q}} \to \overline{\mathbf{Q}_{p}}</span> to do so.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>The grading on the right-hand side is functorial as well. [^convolution grading]: For two graded vector spaces <span class="math inline">V</span> and <span class="math inline">W</span>, the convolution grading on <span class="math inline">V \otimes W</span> is given by <span class="math inline">(V \otimes W)^{n} = \bigoplus_{i+j = n} V^{i} \otimes W^{j}</span>. [^convolution filtration]: For two filtered vector spaces <span class="math inline">V</span> and <span class="math inline">W</span>, the convolution filtration on <span class="math inline">V \otimes W</span> is given by <span class="math inline">\mathrm{Fil}^{n}(V \otimes W) \coloneqq \sum_{i+j = n} V^{i} \otimes W^{j}</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

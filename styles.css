@@ -1,1 +1,6 @@
 /* css styles */
+
+#refs .csl-left-margin {
+  min-width: 5em;
+  padding-right: 0.5em;
+}

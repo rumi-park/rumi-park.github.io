@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -69,6 +89,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -117,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#schedule-temporary" id="toc-schedule-temporary" class="nav-link" data-scroll-target="#schedule-temporary">Schedule (Temporary)</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -148,14 +211,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Time/Venue:</strong> Monday 1-4 PM</li>
 <li><strong>Topics</strong>
 <ul>
-<li>Introductory p-adic Hodge theory</li>
-<li>Integral p-adic Hodge theory</li>
+<li>Introductory <span class="math inline">p</span>-adic Hodge theory</li>
+<li>Integral <span class="math inline">p</span>-adic Hodge theory</li>
 <li>The Fargues-Fontaine curve</li>
 </ul></li>
 <li><strong>References</strong>
 <ul>
-<li>Serin Hong, <em>Lecture notes on p-adic Hodge theory.</em></li>
-<li>Brinon &amp; Conrad - <em>CMI Summer School Notes on p-adic Hodge Theory.</em></li>
+<li>Serin Hong, <em>Lecture notes on <span class="math inline">p</span>-adic Hodge theory.</em> <span class="citation" data-cites="Hong2026">[<a href="#ref-Hong2026" role="doc-biblioref">Hong26</a>]</span></li>
+<li>Brinon &amp; Conrad, <em>CMI Summer School Notes on <span class="math inline">p</span>-adic Hodge Theory.</em> <span class="citation" data-cites="BC2009">[<a href="#ref-BC2009" role="doc-biblioref">BrCo09</a>]</span></li>
 </ul></li>
 </ul>
 <!--
@@ -192,13 +255,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: right;">3</td>
 <td style="text-align: center;">2026-03-16</td>
-<td style="text-align: left;">p-divisible groups</td>
+<td style="text-align: left;"><a href="../../seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html">Finite flat group schemes</a></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
 <td style="text-align: center;">2026-03-23</td>
-<td style="text-align: left;">Hodge-Tate representations</td>
+<td style="text-align: left;"><span class="math inline">p</span>-divisible groups</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
@@ -228,19 +291,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: right;">9</td>
 <td style="text-align: center;">2026-04-27</td>
-<td style="text-align: left;">Integral p-adic Hodge theory 1</td>
+<td style="text-align: left;">Integral <span class="math inline">p</span>-adic Hodge theory 1</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
 <td style="text-align: center;">2026-05-04</td>
-<td style="text-align: left;">Integral p-adic Hodge theory 2</td>
+<td style="text-align: left;">Integral <span class="math inline">p</span>-adic Hodge theory 2</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">11</td>
 <td style="text-align: center;">2026-05-11</td>
-<td style="text-align: left;">Integral p-adic Hodge theory 3</td>
+<td style="text-align: left;">Integral <span class="math inline">p</span>-adic Hodge theory 3</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
@@ -277,9 +340,17 @@ ul.task-list li input[type="checkbox"] {
 </table>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Hong2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[Hong26] </div><div class="csl-right-inline">Hong, Serin, Lecture notes on p-adic <span>Hodge</span> theory, (2026).</div>
+</div>
+<div id="ref-BC2009" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[BrCo09] </div><div class="csl-right-inline">Brinon, Olivier, and Conrad, Brian, <span>CMI</span> summer school notes on p-adic <span>Hodge</span> theory (preliminary version), (2009).</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -3,22 +3,23 @@ title: "[2026 Spring] p-adic Hodge Theory Seminar"
 subtitle: "p-adic Hodge theory & Fargues–Fontaine curve"
 # date: 2026-03-05  # 시작일 같은 거 적고 싶으면
 format:
-  html:
-    toc: true
-    toc-depth: 2
-    number-sections: false
+    html:
+        toc: true
+        toc-depth: 2
+        number-sections: false
+    typst: default
 ---
 
 ## Overview
 
 -   **Time/Venue:** Monday 1-4 PM
 -   **Topics**
-    -   Introductory p-adic Hodge theory
-    -   Integral p-adic Hodge theory
+    -   Introductory $p$-adic Hodge theory
+    -   Integral $p$-adic Hodge theory
     -   The Fargues-Fontaine curve
 -   **References**
-    -   Serin Hong, *Lecture notes on p-adic Hodge theory.*
-    -   Brinon & Conrad - *CMI Summer School Notes on p-adic Hodge Theory.*
+    -   Serin Hong, *Lecture notes on* $p$-adic Hodge theory. [@Hong2026]
+    -   Brinon & Conrad, *CMI Summer School Notes on* $p$-adic Hodge Theory. [@BC2009]
 
 ```{=html}
 <!--
@@ -31,19 +32,19 @@ format:
 
 ## Schedule (Temporary)
 
-| Week | Date | Topic | Reading |
+| Week | Date | Topic |   |
 |-----------------:|:----------------:|:-----------------|:-----------------|
-| 1 | 2026-03-02 | *No meeting* | \- |
-| 2 | 2026-03-09 | [Introduction](lectures/01-introduction.qmd) | \[Hong, Chapter 1\], \[Brinon-Conrad, Part I\] |
-| 3 | 2026-03-16 | p-divisible groups |  |
-| 4 | 2026-03-23 | Hodge-Tate representations |  |
+| 1 | 2026-03-02 | *No meeting* |  |
+| 2 | 2026-03-09 | [Introduction](lectures/01-introduction.qmd) |  |
+| 3 | 2026-03-16 | [Finite flat group schemes](lectures/02-finite-flat-group-schemes.qmd) |  |
+| 4 | 2026-03-23 | $p$-divisible groups |  |
 | 5 | 2026-03-30 | Period rings and functors 1 |  |
 | 6 | 2026-04-06 | Period rings and functors 2 |  |
 | 7 | 2026-04-13 | Period rings and functors 3 |  |
 | 8 | 2026-04-20 | *No meeting (midterm exam)* |  |
-| 9 | 2026-04-27 | Integral p-adic Hodge theory 1 |  |
-| 10 | 2026-05-04 | Integral p-adic Hodge theory 2 |  |
-| 11 | 2026-05-11 | Integral p-adic Hodge theory 3 |  |
+| 9 | 2026-04-27 | Integral $p$-adic Hodge theory 1 |  |
+| 10 | 2026-05-04 | Integral $p$-adic Hodge theory 2 |  |
+| 11 | 2026-05-11 | Integral $p$-adic Hodge theory 3 |  |
 | 12 | 2026-05-18 | Fargues-Fontain curves 1 |  |
 | 13 | 2026-05-25 | *No meeting (Substitute Holiday for Buddha’s Birthday)* |  |
 | 14 | 2026-06-01 | Fargues-Fontain curves 2 |  |

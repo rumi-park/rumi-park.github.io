@@ -1,0 +1,13 @@
+---
+title: "Lecture 2. Finite flat group schemes"
+format:
+    html:
+        toc: true
+        toc-depth: 2
+        number-sections: false
+        include-in-header:
+            text: |
+                <meta name="robots" content="noindex, nofollow">
+    typst: default 
+---
+

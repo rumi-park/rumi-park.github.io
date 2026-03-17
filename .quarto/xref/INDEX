@@ -6,9 +6,19 @@
     "about.html": "d1d129fa"
   },
   "seminars/2026-p-adic-hodge/index.qmd": {
-    "index.html": "a4015553"
+    "index.html": "a4015553",
+    "index.typ": "069388c4"
   },
   "seminars/2026-p-adic-hodge/lectures/01-introduction.qmd": {
-    "01-introduction.html": "5e5d9583"
+    "01-introduction.html": "5e5d9583",
+    "01-introduction.typ": "1fb6a893"
+  },
+  "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.qmd": {
+    "02-finiteflatgroupschemes.html": "688a5e1d",
+    "02-finiteflatgroupschemes.tex": "2b9fbbe3"
+  },
+  "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.qmd": {
+    "02-finite-flat-group-schemes.html": "df25ebb1",
+    "02-finite-flat-group-schemes.typ": "ec85cb5c"
   }
 }
