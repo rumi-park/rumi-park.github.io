@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "seminars/2026-p-adic-hodge/index.html",
     "href": "seminars/2026-p-adic-hodge/index.html",
     "title": "[2026 Spring] p-adic Hodge Theory Seminar",
@@ -25,14 +18,21 @@
     "href": "seminars/2026-p-adic-hodge/index.html#schedule-temporary",
     "title": "[2026 Spring] p-adic Hodge Theory Seminar",
     "section": "Schedule (Temporary)",
-    "text": "Schedule (Temporary)\n\n\n\nWeek\nDate\nTopic\nReading\n\n\n\n\n1\n2026-03-02\nNo meeting\n-\n\n\n2\n2026-03-09\nIntroduction\n[Hong, Chapter 1], [Brinon-Conrad, Part I]\n\n\n3\n2026-03-16\nFinite flat group schemes\n\n\n\n4\n2026-03-23\np-divisible groups\n\n\n\n5\n2026-03-30\nPeriod rings and functors 1\n\n\n\n6\n2026-04-06\nPeriod rings and functors 2\n\n\n\n7\n2026-04-13\nPeriod rings and functors 3\n\n\n\n8\n2026-04-20\nNo meeting (midterm exam)\n\n\n\n9\n2026-04-27\nIntegral p-adic Hodge theory 1\n\n\n\n10\n2026-05-04\nIntegral p-adic Hodge theory 2\n\n\n\n11\n2026-05-11\nIntegral p-adic Hodge theory 3\n\n\n\n12\n2026-05-18\nFargues-Fontain curves 1\n\n\n\n13\n2026-05-25\nNo meeting (Substitute Holiday for Buddha’s Birthday)\n\n\n\n14\n2026-06-01\nFargues-Fontain curves 2\n\n\n\n15\n2026-06-08\nFargues-Fontain curves 3\n\n\n\n16\n2026-06-15\nNo meeting (final exam)"
+    "text": "Schedule (Temporary)\n\n\n\nWeek\nDate\nTopic\n\n\n\n\n1\n2026-03-02\nNo meeting\n\n\n2\n2026-03-09\nIntroduction\n\n\n3\n2026-03-16\nFinite flat group schemes\n\n\n4\n2026-03-23\np-divisible groups\n\n\n5\n2026-03-30\nPeriod rings and functors 1\n\n\n6\n2026-04-06\nPeriod rings and functors 2\n\n\n7\n2026-04-13\nPeriod rings and functors 3\n\n\n8\n2026-04-20\nNo meeting (midterm exam)\n\n\n9\n2026-04-27\nIntegral p-adic Hodge theory 1\n\n\n10\n2026-05-04\nIntegral p-adic Hodge theory 2\n\n\n11\n2026-05-11\nIntegral p-adic Hodge theory 3\n\n\n12\n2026-05-18\nFargues-Fontain curves 1\n\n\n13\n2026-05-25\nNo meeting (Substitute Holiday for Buddha’s Birthday)\n\n\n14\n2026-06-01\nFargues-Fontain curves 2\n\n\n15\n2026-06-08\nFargues-Fontain curves 3\n\n\n16\n2026-06-15\nNo meeting (final exam)"
   },
   {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
-    "href": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
-    "title": "Lecture 1. Introduction",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "See Theorem 1."
+    "text": "About this site"
+  },
+  {
+    "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#notations",
+    "href": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#notations",
+    "title": "Lecture 1. Introduction",
+    "section": "Notations",
+    "text": "Notations\n\n\\overline{k}: separable closure of a field k.\n\\operatorname{Gal}_{k}: absolute Galois group of a field k."
   },
   {
     "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#arithmetic-perspective",
@@ -61,68 +61,5 @@
     "title": "Lecture 1. Introduction",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThere are various different definitions of \\ell-adic representation, e.g., using \\overline{\\mathbf{Q}_{\\ell}} in place of \\mathbf{Q}_{\\ell} (and assuming some properties).↩︎\nNote that we need to fix an embedding \\overline{\\mathbf{Q}} \\to \\overline{\\mathbf{Q}_{p}} to do so.↩︎\nThe grading on the right-hand side is functorial as well. [^convolution grading]: For two graded vector spaces V and W, the convolution grading on V \\otimes W is given by (V \\otimes W)^{n} = \\bigoplus_{i+j = n} V^{i} \\otimes W^{j}. [^convolution filtration]: For two filtered vector spaces V and W, the convolution filtration on V \\otimes W is given by \\mathrm{Fil}^{n}(V \\otimes W) \\coloneqq \\sum_{i+j = n} V^{i} \\otimes W^{j}.↩︎"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#notations",
-    "href": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#notations",
-    "title": "Lecture 1. Introduction",
-    "section": "Notations",
-    "text": "Notations\n\n\\overline{k}: separable closure of a field k.\n\\operatorname{Gal}_{k}: absolute Galois group of a field k."
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#background",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#background",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Background",
-    "text": "Background\nLet \\(G\\) be a reductive group over \\(\\mathbb{Q}_p\\).\n\nParahoric subgroups\nLocal models"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#main-result",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#main-result",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Main Result",
-    "text": "Main Result\n\nTheorem 1 The nearby cycles sheaf satisfies…"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#proof-sketch",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#proof-sketch",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Proof sketch",
-    "text": "Proof sketch\n\nStep 1: Reduce to the local model\nStep 2: Apply base change\nStep 3: Compare with the affine flag variety"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#section",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finiteflatgroupschemes.html#section",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "",
-    "text": "Thank you!"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#background",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#background",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Background",
-    "text": "Background\nLet \\(G\\) be a reductive group over \\(\\mathbb{Q}_p\\).\n\nParahoric subgroups\nLocal models"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#main-result",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#main-result",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Main Result",
-    "text": "Main Result\n\nTheorem 1 The nearby cycles sheaf satisfies…"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#proof-sketch",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#proof-sketch",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "Proof sketch",
-    "text": "Proof sketch\n\nStep 1: Reduce to the local model\nStep 2: Apply base change\nStep 3: Compare with the affine flag variety"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#section",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#section",
-    "title": "Nearby Cycles of Parahoric Shtukas",
-    "section": "",
-    "text": "Thank you!"
   }
 ]
