@@ -38,16 +38,18 @@ format:
 \newcommand{\Fet}{\mathrm{Fét}}
 :::
 
+This post is based on Chapter 1 of [@Hong2026], reorganized and expanded with my own additions. All credit for the original content goes to [@Hong2026], and I highly recommend reading it directly.
+
 ## Notations 
 
-- $\overline{k}$: separable closure of a field $k$. 
+- $\overline{k}$: a separable closure of a field $k$. 
 - $\Gal_{k}$: absolute Galois group of a field $k$. 
 
 ## 1. Arithmetic perspective 
 
-In number theory, one of the main character is \textit{$\ell$-adic Galois representations}. 
+In number theory, one of the main character is $x\ell$-adic Galois representations. 
 
-**Definition[^1].** Let $\Gamma$ be a profinite group. An \textit{$\ell$-adic representation} is a continuous group homomorphism 
+**Definition[^1].** Let $\Gamma$ be a profinite group. An $\ell$-adic representation is a continuous group homomorphism 
 $$ \rho: \Gamma \to \GL_{n}(\bQ_{\ell}). $$ 
 
 **Examples.** 

@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -197,17 +217,18 @@ window.Quarto = {
 <div class="hidden">
 
 </div>
+<p>This post is based on Chapter 1 of <span class="citation" data-cites="Hong2026">[<a href="#ref-Hong2026" role="doc-biblioref">Hong26</a>]</span>, reorganized and expanded with my own additions. All credit for the original content goes to <span class="citation" data-cites="Hong2026">[<a href="#ref-Hong2026" role="doc-biblioref">Hong26</a>]</span>, and I highly recommend reading it directly.</p>
 <section id="notations" class="level2">
 <h2 class="anchored" data-anchor-id="notations">Notations</h2>
 <ul>
-<li><span class="math inline">\overline{k}</span>: separable closure of a field <span class="math inline">k</span>.</li>
+<li><span class="math inline">\overline{k}</span>: a separable closure of a field <span class="math inline">k</span>.</li>
 <li><span class="math inline">\operatorname{Gal}_{k}</span>: absolute Galois group of a field <span class="math inline">k</span>.</li>
 </ul>
 </section>
 <section id="arithmetic-perspective" class="level2">
 <h2 class="anchored" data-anchor-id="arithmetic-perspective">1. Arithmetic perspective</h2>
-<p>In number theory, one of the main character is .</p>
-<p><strong>Definition<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</strong> Let <span class="math inline">\Gamma</span> be a profinite group. An is a continuous group homomorphism <span class="math display"> \rho: \Gamma \to \operatorname{GL}_{n}(\mathbf{Q}_{\ell}). </span></p>
+<p>In number theory, one of the main character is <span class="math inline">x\ell</span>-adic Galois representations.</p>
+<p><strong>Definition<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</strong> Let <span class="math inline">\Gamma</span> be a profinite group. An <span class="math inline">\ell</span>-adic representation is a continuous group homomorphism <span class="math display"> \rho: \Gamma \to \operatorname{GL}_{n}(\mathbf{Q}_{\ell}). </span></p>
 <p><strong>Examples.</strong></p>
 <ol type="1">
 <li><p>For an abelian variety <span class="math inline">A</span> over a field <span class="math inline">k</span>, the rational Tate module <span class="math inline">V_{\ell}(A) \coloneqq \mathbf{Q}_{\ell} \otimes_{\mathbf{Z}_{\ell}} T_{\ell}(A)</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\operatorname{Gal}_{k}</span>. Here, the (integral) Tate module <span class="math inline">T_{\ell}(A)</span> is a <span class="math inline">\mathbf{Z}_{\ell}[\operatorname{Gal}_{k}]</span>-module <span class="math display"> T_{\ell}(A) \coloneqq \varprojlim_{n} A[\ell^{n}](\overline{k}). </span></p></li>
@@ -334,10 +355,15 @@ window.Quarto = {
 <p><strong>Proof.</strong> If <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{cris}}</span>-admissible, then <span class="math display"> \dim_{\mathbf{Q}_{p}}(V) = \dim_{K}(D_{\mathrm{cris}}(V)) \le \dim_{K}(D_{\mathrm{dR}}(V)) \le \dim_{\mathbf{Q}_{p}}(V). </span> Hence, <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{dR}}</span>-admissible. Similarly, <span class="math inline">B_{\mathrm{dR}}</span>-admissibility implies <span class="math inline">B_{\mathrm{HT}}</span>-admissibility.</p>
 
 
+
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-Hong2026" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[Hong26] </div><div class="csl-right-inline">Hong, Serin, Lecture notes on p-adic <span>Hodge</span> theory, (2026).</div>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>There are various different definitions of <span class="math inline">\ell</span>-adic representation, e.g., using <span class="math inline">\overline{\mathbf{Q}_{\ell}}</span> in place of <span class="math inline">\mathbf{Q}_{\ell}</span> (and assuming some properties).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
