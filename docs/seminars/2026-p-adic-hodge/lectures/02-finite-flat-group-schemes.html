@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lecture 2. Finite flat group schemes – JeongWoo Park</title>
+<title>Theorem Environment Test – JeongWoo Park</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,8 +68,50 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta name="robots" content="noindex, nofollow">
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -111,14 +153,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="02-finite-flat-group-schemes.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#numbered-environments" id="toc-numbered-environments" class="nav-link active" data-scroll-target="#numbered-environments">Numbered environments</a></li>
+  <li><a href="#unnumbered-environments" id="toc-unnumbered-environments" class="nav-link" data-scroll-target="#unnumbered-environments">Unnumbered environments</a></li>
+  <li><a href="#cross-reference-test" id="toc-cross-reference-test" class="nav-link" data-scroll-target="#cross-reference-test">Cross-reference test</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="02-finite-flat-group-schemes.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture 2. Finite flat group schemes</h1>
+<h1 class="title">Theorem Environment Test</h1>
 </div>
 
 
@@ -135,8 +185,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="numbered-environments" class="level2">
+<h2 class="anchored" data-anchor-id="numbered-environments">Numbered environments</h2>
+<div id="thm-test" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1 (Pythagoras)</strong></span> For a right triangle with legs <span class="math inline">a, b</span> and hypotenuse <span class="math inline">c</span>, <span class="math display"> a^2 + b^2 = c^2. </span></p>
+</div>
+<div id="def-test" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1 (Group)</strong></span> A <em>group</em> is a set <span class="math inline">G</span> with a binary operation <span class="math inline">\cdot: G \times G \to G</span> satisfying associativity, identity, and inverse axioms.</p>
+</div>
+<div id="lem-test" class="theorem lemma">
+<p><span class="theorem-title"><strong>Lemma 1 (Yoneda)</strong></span> For a locally small category <span class="math inline">\mathcal{C}</span> and a functor <span class="math inline">F: \mathcal{C}^{\mathrm{op}} \to \mathbf{Set}</span>, <span class="math display"> \mathrm{Nat}(h^A, F) \cong F(A). </span></p>
+</div>
+<div id="prp-test" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 1 (Fact as Proposition)</strong></span> The completed algebraic closure <span class="math inline">\widehat{\overline{K}}</span> is algebraically closed.</p>
+</div>
+<div id="cor-test" class="theorem corollary">
+<p><span class="theorem-title"><strong>Corollary 1</strong></span> If <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{cris}}</span>-admissible, then <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{dR}}</span>-admissible.</p>
+</div>
+<div id="exm-test" class="theorem example">
+<p><span class="theorem-title"><strong>Example 1 (Tate module)</strong></span> For an elliptic curve <span class="math inline">E</span> over <span class="math inline">\mathbf{Q}</span>, the rational Tate module <span class="math inline">V_\ell(E)</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\mathrm{Gal}_{\mathbf{Q}}</span>.</p>
+</div>
+<div id="exr-test" class="theorem exercise">
+<p><span class="theorem-title"><strong>Exercise 1</strong></span> Prove that the specialization map is Galois equivariant.</p>
+</div>
+</section>
+<section id="unnumbered-environments" class="level2">
+<h2 class="anchored" data-anchor-id="unnumbered-environments">Unnumbered environments</h2>
+<div class="proof">
+<p><span class="proof-title"><em>Proof</em>. </span>By direct computation, <span class="math inline">(a+b)^2 = a^2 + 2ab + b^2</span>.</p>
+</div>
+<div class="proof remark">
+<p><span class="proof-title"><em>Remark</em>. </span>This also works in characteristic <span class="math inline">\neq 2</span>.</p>
+</div>
+<div class="proof solution">
+<p><span class="proof-title"><em>Solution</em>. </span>Left as an exercise to the reader.</p>
+</div>
+</section>
+<section id="cross-reference-test" class="level2">
+<h2 class="anchored" data-anchor-id="cross-reference-test">Cross-reference test</h2>
+<p>See <a href="#thm-test" class="quarto-xref">Theorem&nbsp;1</a>, <a href="#def-test" class="quarto-xref">Definition&nbsp;1</a>, <a href="#lem-test" class="quarto-xref">Lemma&nbsp;1</a>, <a href="#prp-test" class="quarto-xref">Proposition&nbsp;1</a>, <a href="#cor-test" class="quarto-xref">Corollary&nbsp;1</a>, <a href="#exm-test" class="quarto-xref">Example&nbsp;1</a>, and <a href="#exr-test" class="quarto-xref">Exercise&nbsp;1</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

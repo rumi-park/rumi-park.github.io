@@ -15,7 +15,7 @@ format:
 
 ## Overview
 
--   **Time/Venue:** Monday 1-4 PM
+-   **Time:** Monday 1-4 PM
 -   **Topics**
     -   Introductory $p$-adic Hodge theory
     -   Integral $p$-adic Hodge theory
@@ -36,7 +36,7 @@ format:
 ## Schedule (Temporary)
 
 | Week | Date | Topic |
-|------------------:|:-----------------:|:------------------|
+|-----------------------:|:----------------------:|:-----------------------|
 | 1 | 2026-03-02 | *No meeting* |
 | 2 | 2026-03-09 | [Introduction](lectures/01-introduction.qmd) |
 | 3 | 2026-03-16 | [Finite flat group schemes](lectures/02-finite-flat-group-schemes.qmd) |
@@ -48,8 +48,8 @@ format:
 | 9 | 2026-04-27 | Integral $p$-adic Hodge theory 1 |
 | 10 | 2026-05-04 | Integral $p$-adic Hodge theory 2 |
 | 11 | 2026-05-11 | Integral $p$-adic Hodge theory 3 |
-| 12 | 2026-05-18 | Fargues-Fontain curves 1 |
+| 12 | 2026-05-18 | Fargues-Fontaine curves 1 |
 | 13 | 2026-05-25 | *No meeting (Substitute Holiday for Buddha’s Birthday)* |
-| 14 | 2026-06-01 | Fargues-Fontain curves 2 |
-| 15 | 2026-06-08 | Fargues-Fontain curves 3 |
+| 14 | 2026-06-01 | Fargues-Fontaine curves 2 |
+| 15 | 2026-06-08 | Fargues-Fontaine curves 3 |
 | 16 | 2026-06-15 | *No meeting (final exam)* |
