@@ -20,5 +20,8 @@
   "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.qmd": {
     "02-finite-flat-group-schemes.html": "df25ebb1",
     "02-finite-flat-group-schemes.typ": "ec85cb5c"
+  },
+  "seminars/2026-p-adic-hodge/lectures/01-introduction(old).qmd": {
+    "01-introduction(old).html": "096fe2bc"
   }
 }

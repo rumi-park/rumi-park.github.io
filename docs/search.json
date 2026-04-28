@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "seminars/2026-p-adic-hodge/index.html",
-    "href": "seminars/2026-p-adic-hodge/index.html",
-    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
+    "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
+    "href": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
+    "title": "Lecture 1. Introduction",
     "section": "",
-    "text": "Time: Monday 1-4 PM\nTopics\n\nIntroductory p-adic Hodge theory\nIntegral p-adic Hodge theory\nThe Fargues-Fontaine curve\n\nReferences\n\nSerin Hong, Lecture notes on p-adic Hodge theory. [Hong26]\nBrinon & Conrad, CMI Summer School Notes on p-adic Hodge Theory. [BrCo09]"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/index.html#overview",
-    "href": "seminars/2026-p-adic-hodge/index.html#overview",
-    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
-    "section": "",
-    "text": "Time: Monday 1-4 PM\nTopics\n\nIntroductory p-adic Hodge theory\nIntegral p-adic Hodge theory\nThe Fargues-Fontaine curve\n\nReferences\n\nSerin Hong, Lecture notes on p-adic Hodge theory. [Hong26]\nBrinon & Conrad, CMI Summer School Notes on p-adic Hodge Theory. [BrCo09]"
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/index.html#schedule-temporary",
-    "href": "seminars/2026-p-adic-hodge/index.html#schedule-temporary",
-    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
-    "section": "Schedule (Temporary)",
-    "text": "Schedule (Temporary)\n\n\n\nWeek\nDate\nTopic\n\n\n\n\n1\n2026-03-02\nNo meeting\n\n\n2\n2026-03-09\nIntroduction\n\n\n3\n2026-03-16\nFinite flat group schemes\n\n\n4\n2026-03-23\np-divisible groups\n\n\n5\n2026-03-30\nPeriod rings and functors 1\n\n\n6\n2026-04-06\nPeriod rings and functors 2\n\n\n7\n2026-04-13\nPeriod rings and functors 3\n\n\n8\n2026-04-20\nNo meeting (midterm exam)\n\n\n9\n2026-04-27\nIntegral p-adic Hodge theory 1\n\n\n10\n2026-05-04\nIntegral p-adic Hodge theory 2\n\n\n11\n2026-05-11\nIntegral p-adic Hodge theory 3\n\n\n12\n2026-05-18\nFargues-Fontaine curves 1\n\n\n13\n2026-05-25\nNo meeting (Substitute Holiday for Buddha’s Birthday)\n\n\n14\n2026-06-01\nFargues-Fontaine curves 2\n\n\n15\n2026-06-08\nFargues-Fontaine curves 3\n\n\n16\n2026-06-15\nNo meeting (final exam)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "text": "This post largely follows Chapter 1 of [Hong26], reorganized and condensed with my own commentary. All credit for the original material goes to [Hong26]; any errors in exposition are mine. I highly recommend reading the original."
   },
   {
     "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html#notations",
@@ -63,38 +42,24 @@
     "text": "Footnotes\n\n\nThere are various different definitions of \\ell-adic representation, e.g., using \\overline{\\mathbf{Q}_{\\ell}} in place of \\mathbf{Q}_{\\ell} (and assuming some properties).↩︎\nNote that we need to fix an embedding \\overline{\\mathbf{Q}} \\to \\overline{\\mathbf{Q}_{p}} to do so.↩︎\nThe grading on the right-hand side is functorial as well. [^convolution grading]: For two graded vector spaces V and W, the convolution grading on V \\otimes W is given by (V \\otimes W)^{n} = \\bigoplus_{i+j = n} V^{i} \\otimes W^{j}. [^convolution filtration]: For two filtered vector spaces V and W, the convolution filtration on V \\otimes W is given by \\mathrm{Fil}^{n}(V \\otimes W) \\coloneqq \\sum_{i+j = n} V^{i} \\otimes W^{j}.↩︎"
   },
   {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
-    "href": "seminars/2026-p-adic-hodge/lectures/01-introduction.html",
-    "title": "Lecture 1. Introduction",
+    "objectID": "seminars/2026-p-adic-hodge/index.html",
+    "href": "seminars/2026-p-adic-hodge/index.html",
+    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
     "section": "",
-    "text": "This post largely follows Chapter 1 of [Hong26], reorganized and condensed with my own commentary. All credit for the original material goes to [Hong26]; any errors in exposition are mine. I highly recommend reading the original."
+    "text": "Time: Monday 1-4 PM\nTopics\n\nIntroductory p-adic Hodge theory\nIntegral p-adic Hodge theory\nThe Fargues-Fontaine curve\n\nReferences\n\nSerin Hong, Lecture notes on p-adic Hodge theory. [Hong26]\nBrinon & Conrad, CMI Summer School Notes on p-adic Hodge Theory. [BrCo09]"
   },
   {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html",
-    "title": "Theorem Environment Test",
+    "objectID": "seminars/2026-p-adic-hodge/index.html#overview",
+    "href": "seminars/2026-p-adic-hodge/index.html#overview",
+    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
     "section": "",
-    "text": "Theorem 1 (Pythagoras) For a right triangle with legs a, b and hypotenuse c,  a^2 + b^2 = c^2. \n\n\nDefinition 1 (Group) A group is a set G with a binary operation \\cdot: G \\times G \\to G satisfying associativity, identity, and inverse axioms.\n\n\nLemma 1 (Yoneda) For a locally small category \\mathcal{C} and a functor F: \\mathcal{C}^{\\mathrm{op}} \\to \\mathbf{Set},  \\mathrm{Nat}(h^A, F) \\cong F(A). \n\n\nProposition 1 (Fact as Proposition) The completed algebraic closure \\widehat{\\overline{K}} is algebraically closed.\n\n\nCorollary 1 If V is B_{\\mathrm{cris}}-admissible, then V is B_{\\mathrm{dR}}-admissible.\n\n\nExample 1 (Tate module) For an elliptic curve E over \\mathbf{Q}, the rational Tate module V_\\ell(E) is an \\ell-adic representation of \\mathrm{Gal}_{\\mathbf{Q}}.\n\n\nExercise 1 Prove that the specialization map is Galois equivariant."
+    "text": "Time: Monday 1-4 PM\nTopics\n\nIntroductory p-adic Hodge theory\nIntegral p-adic Hodge theory\nThe Fargues-Fontaine curve\n\nReferences\n\nSerin Hong, Lecture notes on p-adic Hodge theory. [Hong26]\nBrinon & Conrad, CMI Summer School Notes on p-adic Hodge Theory. [BrCo09]"
   },
   {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#numbered-environments",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#numbered-environments",
-    "title": "Theorem Environment Test",
-    "section": "",
-    "text": "Theorem 1 (Pythagoras) For a right triangle with legs a, b and hypotenuse c,  a^2 + b^2 = c^2. \n\n\nDefinition 1 (Group) A group is a set G with a binary operation \\cdot: G \\times G \\to G satisfying associativity, identity, and inverse axioms.\n\n\nLemma 1 (Yoneda) For a locally small category \\mathcal{C} and a functor F: \\mathcal{C}^{\\mathrm{op}} \\to \\mathbf{Set},  \\mathrm{Nat}(h^A, F) \\cong F(A). \n\n\nProposition 1 (Fact as Proposition) The completed algebraic closure \\widehat{\\overline{K}} is algebraically closed.\n\n\nCorollary 1 If V is B_{\\mathrm{cris}}-admissible, then V is B_{\\mathrm{dR}}-admissible.\n\n\nExample 1 (Tate module) For an elliptic curve E over \\mathbf{Q}, the rational Tate module V_\\ell(E) is an \\ell-adic representation of \\mathrm{Gal}_{\\mathbf{Q}}.\n\n\nExercise 1 Prove that the specialization map is Galois equivariant."
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#unnumbered-environments",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#unnumbered-environments",
-    "title": "Theorem Environment Test",
-    "section": "Unnumbered environments",
-    "text": "Unnumbered environments\n\nProof. By direct computation, (a+b)^2 = a^2 + 2ab + b^2.\n\n\nRemark. This also works in characteristic \\neq 2.\n\n\nSolution. Left as an exercise to the reader."
-  },
-  {
-    "objectID": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#cross-reference-test",
-    "href": "seminars/2026-p-adic-hodge/lectures/02-finite-flat-group-schemes.html#cross-reference-test",
-    "title": "Theorem Environment Test",
-    "section": "Cross-reference test",
-    "text": "Cross-reference test\nSee Theorem 1, Definition 1, Lemma 1, Proposition 1, Corollary 1, Example 1, and Exercise 1."
+    "objectID": "seminars/2026-p-adic-hodge/index.html#schedule-temporary",
+    "href": "seminars/2026-p-adic-hodge/index.html#schedule-temporary",
+    "title": "[2026 Spring] p-adic Hodge Theory Seminar",
+    "section": "Schedule (Temporary)",
+    "text": "Schedule (Temporary)\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\n\n\n\n\n1\n2026-03-02\nNo meeting\n\n\n2\n2026-03-09\nIntroduction\n\n\n3\n2026-03-16\nFinite flat group schemes\n\n\n4\n2026-03-23\np-divisible groups 1\n\n\n5\n2026-03-30\np-divisible groups 2 / Period rings and functors 1\n\n\n6\n2026-04-06\nPeriod rings and functors 2\n\n\n7\n2026-04-13\nPeriod rings and functors 3\n\n\n8\n2026-04-20\nNo meeting (midterm exam)\n\n\n9\n2026-04-27\nPeriod rings and functors 4\n\n\n10\n2026-05-04\nIntegral p-adic Hodge theory 1\n\n\n11\n2026-05-11\nIntegral p-adic Hodge theory 2\n\n\n12\n2026-05-18\nIntegral p-adic Hodge theory 3\n\n\n13\n2026-05-27 (unusual date)\nFargues-Fontaine curves 1\n\n\n14\n2026-06-01\nFargues-Fontaine curves 2\n\n\n15\n2026-06-08\nFargues-Fontaine curves 3\n\n\n16\n2026-06-15\nNo meeting (final exam)"
   }
 ]
