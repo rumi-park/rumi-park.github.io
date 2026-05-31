@@ -18,28 +18,29 @@ format:
 -   **Topics**
     -   Introductory $p$-adic Hodge theory
     -   Integral $p$-adic Hodge theory
-    -   The Fargues-Fontaine curve
+    -   The Fargues–Fontaine curve
 -   **References**
-    -   Serin Hong, *Lecture notes on* $p$-adic Hodge theory. [@Hong2026]
-    -   Brinon & Conrad, *CMI Summer School Notes on* $p$-adic Hodge Theory. [@BC2009]
+    -   Hong. *Lecture notes on* $p$-adic Hodge theory.
+    -   Brinon & Conrad. *CMI Summer School Notes on* $p$-adic Hodge Theory.
+    -   Kisin. Crystalline representations and $F$-crystals.
 
 ## Schedule (Temporary)
 
-| Week | Date | Topic |
-|-----------------------:|:----------------------:|:-----------------------|
-| 1 | 2026-03-02 | *No meeting* |
-| 2 | 2026-03-09 | Introduction |
-| 3 | 2026-03-16 | Finite flat group schemes |
-| 4 | 2026-03-23 | $p$-divisible groups 1 |
-| 5 | 2026-03-30 | $p$-divisible groups 2 / Period rings and functors 1 |
-| 6 | 2026-04-06 | Period rings and functors 2 |
-| 7 | 2026-04-13 | Period rings and functors 3 |
-| 8 | 2026-04-20 | *No meeting (midterm exam)* |
-| 9 | 2026-04-27 | Period rings and functors 4 |
-| 10 | 2026-05-04 | Integral $p$-adic Hodge theory 1 |
-| 11 | 2026-05-11 | Integral $p$-adic Hodge theory 2 |
-| 12 | 2026-05-18 | Integral $p$-adic Hodge theory 3 |
-| 13 | *2026-05-27 (unusual date)* | Fargues-Fontaine curves 1 |
-| 14 | 2026-06-01 | Fargues-Fontaine curves 2 |
-| 15 | 2026-06-08 | Fargues-Fontaine curves 3 |
-| 16 | 2026-06-15 | *No meeting (final exam)* |
+| Week |      Date      | Topic                                                |
+|--------------:|:-------------:|:-----------------------------------------|
+|    1 |   2026-03-02   | *No meeting*                                         |
+|    2 |   2026-03-09   | Introduction                                         |
+|    3 |   2026-03-16   | Finite flat group schemes                            |
+|    4 |   2026-03-23   | $p$-divisible groups 1                               |
+|    5 |   2026-03-30   | $p$-divisible groups 2 / Period rings and functors 1 |
+|    6 |   2026-04-06   | Period rings and functors 2                          |
+|    7 |   2026-04-13   | Period rings and functors 3                          |
+|    8 |   2026-04-20   | *No meeting (midterm exam)*                          |
+|    9 |   2026-04-27   | Period rings and functors 4                          |
+|   10 |   2026-05-04   | Integral $p$-adic Hodge theory 1                     |
+|   11 |   2026-05-11   | Integral $p$-adic Hodge theory 2                     |
+|   12 |   2026-05-18   | Integral $p$-adic Hodge theory 3                     |
+|   13 | ~~2026-05-25~~ | *No meeting (Holiday)*                               |
+|   14 |   2026-06-01   | The Fargues–Fontaine curve                           |
+|   15 | ~~2026-06-08~~ | *Cancelled*                                          |
+|   16 |   2026-06-15   | *No meeting (final exam)*                            |
