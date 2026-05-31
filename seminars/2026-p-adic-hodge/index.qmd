@@ -24,7 +24,7 @@ format:
     -   Brinon & Conrad. *CMI Summer School Notes on* $p$-adic Hodge Theory.
     -   Kisin. Crystalline representations and $F$-crystals.
 
-## Schedule (Temporary)
+## Schedule
 
 | Week |      Date      | Topic                                                |
 |--------------:|:-------------:|:-----------------------------------------|
