@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.8.27" />
 
-<meta name="dcterms.date" content="2026-03-09">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="dcterms.date" content="2026-03-09" />
 
 <title>Lecture 1. Introduction – JeongWoo Park</title>
 <style>
@@ -43,25 +45,7 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<!-- htmldependencies:E3FAD763 -->
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,7 +75,7 @@ div.csl-indent {
 }</script>
 <meta name="robots" content="noindex, nofollow">
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
  var macros = [];
@@ -106,7 +90,7 @@ div.csl-indent {
    });
 }}});
   </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -135,32 +119,34 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../../styles.css" />
 </head>
 
-<body class="nav-fixed quarto-light">
+<body>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="/index.html">
     <span class="navbar-title">JeongWoo Park</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="/index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../seminars/2026-p-adic-hodge/index.html"> 
+    <a class="nav-link" href="/seminars/2026-p-adic-hodge/index.html"> 
 <span class="menu-text">[2026 Spring] p-adic Hodge Theory Seminar</span></a>
   </li>  
 </ul>
@@ -175,21 +161,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#notations" id="toc-notations" class="nav-link active" data-scroll-target="#notations"><span class="header-section-number">1</span> Notations</a></li>
-  <li><a href="#arithmetic-perspective" id="toc-arithmetic-perspective" class="nav-link" data-scroll-target="#arithmetic-perspective"><span class="header-section-number">2</span> Arithmetic perspective</a></li>
-  <li><a href="#geometric-perspective" id="toc-geometric-perspective" class="nav-link" data-scroll-target="#geometric-perspective"><span class="header-section-number">3</span> Geometric perspective</a>
-  <ul class="collapse">
-  <li><a href="#hodge-tate-comparison" id="toc-hodge-tate-comparison" class="nav-link" data-scroll-target="#hodge-tate-comparison"><span class="header-section-number">3.1</span> Hodge-Tate comparison</a></li>
-  <li><a href="#de-rham-comparison" id="toc-de-rham-comparison" class="nav-link" data-scroll-target="#de-rham-comparison"><span class="header-section-number">3.2</span> de Rham comparison</a></li>
-  <li><a href="#crystalline-comparison-theorem" id="toc-crystalline-comparison-theorem" class="nav-link" data-scroll-target="#crystalline-comparison-theorem"><span class="header-section-number">3.3</span> Crystalline comparison theorem</a></li>
-  </ul></li>
-  <li><a href="#period-rings-and-functors" id="toc-period-rings-and-functors" class="nav-link" data-scroll-target="#period-rings-and-functors"><span class="header-section-number">4</span> Period rings and functors</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="01-introduction.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li></ul></div></nav>
+        <div id="quarto-toc-target"></div>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -222,26 +194,40 @@ window.Quarto = {
 
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#notations" id="toc-notations"><span class="header-section-number">1</span> Notations</a></li>
+  <li><a href="#arithmetic-perspective" id="toc-arithmetic-perspective"><span class="header-section-number">2</span> Arithmetic perspective</a></li>
+  <li><a href="#geometric-perspective" id="toc-geometric-perspective"><span class="header-section-number">3</span> Geometric perspective</a>
+  <ul>
+  <li><a href="#hodge-tate-comparison" id="toc-hodge-tate-comparison"><span class="header-section-number">3.1</span> Hodge-Tate comparison</a></li>
+  <li><a href="#de-rham-comparison" id="toc-de-rham-comparison"><span class="header-section-number">3.2</span> de Rham comparison</a></li>
+  <li><a href="#crystalline-comparison-theorem" id="toc-crystalline-comparison-theorem"><span class="header-section-number">3.3</span> Crystalline comparison theorem</a></li>
+  </ul></li>
+  <li><a href="#period-rings-and-functors" id="toc-period-rings-and-functors"><span class="header-section-number">4</span> Period rings and functors</a></li>
+  </ul>
+</nav>
 <div class="hidden">
 
 </div>
 <p>This post largely follows Chapter 1 of <span class="citation" data-cites="Hong2026">[<a href="#ref-Hong2026" role="doc-biblioref">Hong26</a>]</span>, reorganized and condensed with my own commentary. All credit for the original material goes to <span class="citation" data-cites="Hong2026">[<a href="#ref-Hong2026" role="doc-biblioref">Hong26</a>]</span>; any errors in exposition are mine. I highly recommend reading the original.</p>
 <section id="notations" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="notations"><span class="header-section-number">1</span> Notations</h2>
+<h2 data-number="1"><span class="header-section-number">1</span> Notations</h2>
 <ul>
 <li><span class="math inline">\overline{k}</span>: a separable closure of a field <span class="math inline">k</span>.</li>
 <li><span class="math inline">\operatorname{Gal}_{k}</span>: absolute Galois group of a field <span class="math inline">k</span>.</li>
 </ul>
 </section>
 <section id="arithmetic-perspective" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="arithmetic-perspective"><span class="header-section-number">2</span> Arithmetic perspective</h2>
+<h2 data-number="2"><span class="header-section-number">2</span> Arithmetic perspective</h2>
 <p>In number theory, one of the main character is <span class="math inline">\ell</span>-adic Galois representations.</p>
 <div id="def-l-adic-rep" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 1 (<span class="math inline">\ell</span>-adic representation)</strong></span> Let <span class="math inline">\Gamma</span> be a profinite group. An <span class="math inline">\ell</span>-adic representation<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> is a continuous group homomorphism <span class="math display"> \rho: \Gamma \to \operatorname{GL}_{n}(\mathbf{Q}_{\ell}). </span></p>
 </div>
 <div id="exm-l-adic-reps" class="theorem example">
-<p><span class="theorem-title"><strong>Example 1 (<span class="math inline">\ell</span>-adic representations)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 1 (<span class="math inline">\ell</span>-adic representations)</strong></span>  </p>
 <ol type="1">
 <li><p>For an abelian variety <span class="math inline">A</span> over a field <span class="math inline">k</span>, the rational Tate module <span class="math inline">V_{\ell}(A) \coloneqq \mathbf{Q}_{\ell} \otimes_{\mathbf{Z}_{\ell}} T_{\ell}(A)</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\operatorname{Gal}_{k}</span>. Here, the (integral) Tate module <span class="math inline">T_{\ell}(A)</span> is a <span class="math inline">\mathbf{Z}_{\ell}[\operatorname{Gal}_{k}]</span>-module <span class="math display"> T_{\ell}(A) \coloneqq \varprojlim_{n} A[\ell^{n}](\overline{k}). </span></p></li>
 <li><p>For a proper scheme <span class="math inline">X</span> over a field <span class="math inline">k</span>, the étale cohomology <span class="math inline">H_{\mathrm{ét}}^{n}(X_{\overline{k}}, \mathbf{Q}_{\ell})</span> is an <span class="math inline">\ell</span>-adic representation of <span class="math inline">\operatorname{Gal}_{k}</span>.</p></li>
@@ -262,7 +248,7 @@ window.Quarto = {
 <div id="thm-fet-henselian" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 1 (Stacks Project, <a href="https://stacks.math.columbia.edu/tag/09ZS">Tag 09ZS</a>)</strong></span> For a Henselian local ring <span class="math inline">R</span> with residue field <span class="math inline">k</span>, the reduction defines equivalence of categories <span class="math display"> \mathrm{Fét}(R) \to \mathrm{Fét}(k); \quad T \mapsto T_{k} </span></p>
 </div>
-<p>Indeed, we obtain <span class="math display"> G_{\mathbf{Z}_{p}}(\overline{\mathbf{Z}_{p}}) = \varinjlim_{K'/K} \operatorname{Hom}_{\mathbf{Z}_{p}}(\operatorname{Spec}(\mathscr{O}_{K'}), G_{\mathbf{Z}_{p}}) = \varinjlim_{K'/K} \operatorname{Hom}_{\mathbf{F}_{p}}(\operatorname{Spec}(k_{K'}), G_{\mathbf{F}_{p}}) = G_{\mathbf{F}_{p}}(\overline{\mathbf{F}_{p}}). </span></p>
+<p>Indeed, we obtain <span class="math display"> G_{\mathbf{Z}_{p}}(\overline{\mathbf{Z}_{p}}) = \varinjlim_{K&#39;/K} \operatorname{Hom}_{\mathbf{Z}_{p}}(\operatorname{Spec}(\mathscr{O}_{K&#39;}), G_{\mathbf{Z}_{p}}) = \varinjlim_{K&#39;/K} \operatorname{Hom}_{\mathbf{F}_{p}}(\operatorname{Spec}(k_{K&#39;}), G_{\mathbf{F}_{p}}) = G_{\mathbf{F}_{p}}(\overline{\mathbf{F}_{p}}). </span></p>
 <p>Therefore, we obtain a Galois equivariant isomorphism of <span class="math inline">\mathbf{Z}_{\ell}</span>-modules <span class="math display"> \operatorname{sp}: T_{\ell}(E) \to T_{\ell}(E_{\mathbf{F}_{p}}). </span> In particular, the Tate module <span class="math inline">T_{\ell}(E)</span> is unramified if it has a good reduction and <span class="math inline">\ell \perp p</span>. In fact, the unramifiedness of Tate module is equivalent to the elliptic curve <span class="math inline">E</span> has a good reduction!</p>
 <div id="thm-nos" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 2 (Néron-Ogg-Shafarevich)</strong></span> Let <span class="math inline">A</span> be an abelian variety over a local field <span class="math inline">K</span> with residual characteristic <span class="math inline">p</span>. The following are equivalent.</p>
@@ -285,10 +271,10 @@ window.Quarto = {
 </ul>
 </section>
 <section id="geometric-perspective" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="geometric-perspective"><span class="header-section-number">3</span> Geometric perspective</h2>
+<h2 data-number="3"><span class="header-section-number">3</span> Geometric perspective</h2>
 <p>In the previous section, we explained the arithmetic part of p-adic Hodge theory. Still, the question that why it is named with “p-adic Hodge” remains. This section would give an answer.</p>
 <section id="hodge-tate-comparison" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="hodge-tate-comparison"><span class="header-section-number">3.1</span> Hodge-Tate comparison</h3>
+<h3 data-number="3.1"><span class="header-section-number">3.1</span> Hodge-Tate comparison</h3>
 <p>The classical Hodge decomposition is as follows.</p>
 <div id="thm-hodge-decomp" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 4 (Hodge decomposition)</strong></span> Let <span class="math inline">X</span> be a smooth proper scheme over <span class="math inline">\mathbf{C}</span>. There is a functorial<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> isomorphism of <span class="math inline">\mathbf{C}</span>-vector spaces <span class="math display"> H_{\text{Betti}}^{n}(X, \mathbf{Z}) \otimes_{\mathbf{Z}} \mathbf{C}\cong \bigoplus_{i+j = n} H^{i, j}(X). </span> Here, <span class="math inline">H^{i, j}(X) = H^{i}(X, \Omega^{j}_{X/\mathbf{C}})</span> and there is the Hodge symmetry <span class="math inline">\overline{H^{i,j}} = H^{j, i}</span>. In the other words, <span class="math inline">H_{\text{Betti}}^n(X, \mathbf{Z})</span> admits a natural <span class="math inline">\mathbf{Z}</span>-Hodge structure of weight <span class="math inline">n</span>.</p>
@@ -301,7 +287,7 @@ window.Quarto = {
 <p><span class="proof-title"><em>Remark</em>. </span>Any <span class="math inline">p</span>-adic field contains <span class="math inline">\mathbf{Q}_{p}</span>, the topological closure of <span class="math inline">\mathbf{Q}</span>.</p>
 </div>
 <div id="exm-p-adic-fields" class="theorem example">
-<p><span class="theorem-title"><strong>Example 2 (<span class="math inline">p</span>-adic fields)</strong></span> &nbsp;</p>
+<p><span class="theorem-title"><strong>Example 2 (<span class="math inline">p</span>-adic fields)</strong></span>  </p>
 <ol type="1">
 <li>Finite extensions of <span class="math inline">\mathbf{Q}_{p}</span> are <span class="math inline">p</span>-adic fields.</li>
 <li>The completed maximal unramified field <span class="math inline">\breve{K} \coloneqq \widehat{K^{\mathrm{unr}}}</span> of a finite extension <span class="math inline">K/\mathbf{Q}_{p}</span> is a <span class="math inline">p</span>-adic field.</li>
@@ -356,7 +342,7 @@ window.Quarto = {
 <p>This implies <span class="math inline">B_{\mathrm{HT}}^{\operatorname{Gal}_{K}} = K</span>. Hence, if we take the Galois invariant to the Hodge-Tate decomposition, we obtain a grading respecting isomorphism <span class="math display"> (H_{\mathrm{ét}}^n(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{HT}})^{\operatorname{Gal}_{K}} \cong \bigoplus_{i+j = n} H^{i}(X, \Omega^{j}_{X/K}). </span> That means, <em>étale cohomology remembers Hodge cohomology</em>.</p>
 </section>
 <section id="de-rham-comparison" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="de-rham-comparison"><span class="header-section-number">3.2</span> de Rham comparison</h3>
+<h3 data-number="3.2"><span class="header-section-number">3.2</span> de Rham comparison</h3>
 <p>The Hodge-Tate decomposition is not so strong so we cannot obtain many useful properties from this. We need a stronger comparison theorem, and the next step is the <em>de Rham comparison</em>. Let us first recall the classical theory.</p>
 <p>For a smooth proper scheme <span class="math inline">X</span> over <span class="math inline">\mathbf{C}</span>, the de Rham cohomology <span class="math inline">H_{\mathrm{dR}}^n(X/\mathbf{C})</span> admits a natural decreasing filtration, called a <em>Hodge filtration</em>: <span class="math display"> H_{\mathrm{dR}}^n(X/\mathbf{C}) = \mathrm{Fil}^{0}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \supseteq \mathrm{Fil}^{1}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \supseteq \cdots \supseteq \mathrm{Fil}^{n+1}(H_{\mathrm{dR}}^n(X/\mathbf{C})) = 0. </span> The de Rham comparison theorem is <span class="math display"> H_{\text{Betti}}^n(X, \mathbf{Z}) \otimes_{\mathbf{Z}} \mathbf{C}\cong H_{\mathrm{dR}}^n(X/\mathbf{C}). </span> This recovers the Hodge decomposition via <span class="math display"> H^{i, j} = \mathrm{Fil}^{j}(H_{\mathrm{dR}}^n(X/\mathbf{C})) \cap \overline{\mathrm{Fil}^{i}(H_{\mathrm{dR}}^n(X/\mathbf{C}))}. </span> Although this is equivalent to the Hodge decomposition, in the <span class="math inline">p</span>-adic case, it gives a stronger comparison.</p>
 <div id="thm-faltings-dr" class="theorem">
@@ -376,7 +362,7 @@ window.Quarto = {
 <p>By the first property, we can recover the Hodge-Tate comparison from de Rham comparison by taking the associated graded vector space. By the second property, we can recover the de Rham cohomology from étale cohomology.</p>
 </section>
 <section id="crystalline-comparison-theorem" class="level3" data-number="3.3">
-<h3 data-number="3.3" class="anchored" data-anchor-id="crystalline-comparison-theorem"><span class="header-section-number">3.3</span> Crystalline comparison theorem</h3>
+<h3 data-number="3.3"><span class="header-section-number">3.3</span> Crystalline comparison theorem</h3>
 <p>The last comparison theorem is the <em>crystalline comparison</em>.</p>
 <div id="thm-faltings-cris" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 9 (Faltings, crystalline comparison)</strong></span> Let <span class="math inline">K</span> be a <span class="math inline">p</span>-adic field with (perfect) residue field <span class="math inline">k</span> and <span class="math inline">K_{0} \coloneqq W(k)[\frac{1}{p}]</span> be the maximal unramified subextension. There is a <span class="math inline">\operatorname{Gal}_{K}</span>-stable <span class="math inline">K_{0}</span>-subalgebra <span class="math inline">B_{\mathrm{cris}}</span> of <span class="math inline">B_{\mathrm{dR}}</span> such that, for a proper smooth <span class="math inline">X</span> over <span class="math inline">K</span> with a good reduction <span class="math inline">X_{W(k)}</span>, we obtain a natural Galois and <span class="math inline">\varphi</span> equivariant filtration respecting isomorphism <span class="math display"> H_{\mathrm{ét}}^{n}(X_{\overline{K}}, \mathbf{Q}_{p}) \otimes_{\mathbf{Q}_{p}} B_{\mathrm{cris}} \cong H_{\mathrm{cris}}^{n}(X_{k}/W(k))[\tfrac{1}{p}] \otimes_{K_{0}} B_{\mathrm{cris}} </span> recovering the de Rham comparison after tensoring <span class="math inline">B_{\mathrm{dR}}</span>.</p>
@@ -401,7 +387,7 @@ window.Quarto = {
 </section>
 </section>
 <section id="period-rings-and-functors" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="period-rings-and-functors"><span class="header-section-number">4</span> Period rings and functors</h2>
+<h2 data-number="4"><span class="header-section-number">4</span> Period rings and functors</h2>
 <p>In this section, we will make a formal setup to express what we explained in a categorical language. Throughout this section, we fix a p-adic field <span class="math inline">K</span> and let <span class="math inline">B \in \{B_{\mathrm{HT}}, B_{\mathrm{dR}}, B_{\mathrm{cris}}\}</span>.</p>
 <div id="def-db-functor" class="theorem definition">
 <p><span class="theorem-title"><strong>Definition 6 (Functor <span class="math inline">D_{B}</span>)</strong></span> We define a functor <span class="math inline">D_{B}: \mathrm{Rep}_{\mathbf{Q}_{p}}(\operatorname{Gal}_{K}) \to \mathrm{Vect}^{\ast}_{B}</span> as <span class="math display"> D_{B}(V) \coloneqq (V \otimes_{\mathbf{Q}_{p}} B)^{\Gamma}. </span> Here, <span class="math inline">\mathrm{Vect}^{\ast}_{B}</span> is the category of <span class="math inline">B^{\operatorname{Gal}_{K}}</span>-vector spaces with additional structure, where the additional structure is given as follows.</p>
@@ -442,25 +428,29 @@ window.Quarto = {
 <div class="proof">
 <p><span class="proof-title"><em>Proof</em>. </span>If <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{cris}}</span>-admissible, then <span class="math display"> \dim_{\mathbf{Q}_{p}}(V) = \dim_{K}(D_{\mathrm{cris}}(V)) \le \dim_{K}(D_{\mathrm{dR}}(V)) \le \dim_{\mathbf{Q}_{p}}(V). </span> Hence, <span class="math inline">V</span> is <span class="math inline">B_{\mathrm{dR}}</span>-admissible. Similarly, <span class="math inline">B_{\mathrm{dR}}</span>-admissibility implies <span class="math inline">B_{\mathrm{HT}}</span>-admissibility.</p>
 </div>
-
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6WzIwMjYgU3ByaW5nXSBwLWFkaWMgSG9kZ2UgVGhlb3J5IFNlbWluYXI=">[2026 Spring] p-adic Hodge Theory Seminar</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlbWluYXJzLzIwMjYtcC1hZGljLWhvZGdlL2luZGV4Lmh0bWw=">/seminars/2026-p-adic-hodge/index.html</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lecture 1. Introduction – JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lecture 1. Introduction – JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lecture 1. Introduction – JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">JeongWoo Park</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
+</div>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-Hong2026" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[Hong26] </div><div class="csl-right-inline">Hong, Serin, Lecture notes on p-adic <span>Hodge</span> theory, (2026).</div>
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
 <ol>
 <li id="fn1"><p>There are various different definitions of <span class="math inline">\ell</span>-adic representation, e.g., using <span class="math inline">\overline{\mathbf{Q}_{\ell}}</span> in place of <span class="math inline">\mathbf{Q}_{\ell}</span> (and assuming some properties).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Note that we need to fix an embedding <span class="math inline">\overline{\mathbf{Q}} \to \overline{\mathbf{Q}_{p}}</span> to do so.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>The grading on the right-hand side is functorial as well. [^convolution grading]: For two graded vector spaces <span class="math inline">V</span> and <span class="math inline">W</span>, the convolution grading on <span class="math inline">V \otimes W</span> is given by <span class="math inline">(V \otimes W)^{n} = \bigoplus_{i+j = n} V^{i} \otimes W^{j}</span>. [^convolution filtration]: For two filtered vector spaces <span class="math inline">V</span> and <span class="math inline">W</span>, the convolution filtration on <span class="math inline">V \otimes W</span> is given by <span class="math inline">\mathrm{Fil}^{n}(V \otimes W) \coloneqq \sum_{i+j = n} V^{i} \otimes W^{j}</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section></div></main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -862,7 +852,6 @@ window.Quarto = {
   </script>
 </div> <!-- /content -->
 
+</body>
 
-
-
-</body></html>
+</html>
